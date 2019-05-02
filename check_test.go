@@ -55,7 +55,7 @@ var _ = Describe("Check", func() {
 			req.Version = nil
 		})
 
-		It("returns the current digest", func() {
+		FIt("returns the current digest", func() {
 			Expect(res).To(Equal([]resource.Version{
 				{Digest: LATEST_STATIC_DIGEST},
 			}))
